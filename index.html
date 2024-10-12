@@ -16,9 +16,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
     <style>
-        
-
-
         .con{
             text-decoration: none;
             padding: 10px;
@@ -86,7 +83,8 @@
             font-weight: 900;
             color: lightgray;
             opacity: 0.2;
-            top: 45rem;
+            margin-top: -80px;
+            
             
         }
         .card-title{
@@ -98,6 +96,11 @@
             z-index: 1;
             left: 4rem;
             top: 1rem;
+        }
+        .homeclass {
+            position: relative;
+            z-index: 1;
+            margin-top: 100px;
         }
         .list{
             padding: 10px;
@@ -177,19 +180,31 @@
   font-size: 3rem;            
   position: absolute;
   font-weight: 200;
-  top: 144.5rem;
   color: skyblue;
 }
 .service1{
   font-size: 3rem;            
   position: absolute;
   font-weight: 200;
-  top: 156.5rem;
+  
   color: skyblue;
 }
 .service-link{
     color: skyblue;
     
+}
+.footer-list>li,a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    margin-left: 0px;
+}
+
+.footer-icon:hover{
+            color: lightblue;
+        }
+.footer{
+    margin-top: 30px;
 }
 </style>
 </head>
@@ -201,7 +216,7 @@
         <div class="bg-dark text-white">
             <div class="">
                 <p class="con1">Phone:<a class="con" href="tel://#">+91-98426 56743</a></p>
-                <p class="con1">Email:<a class="con" href="">cloudshapers@cloud.com</a></p>
+                <p class="con1">Email:<a class="con" href="#">cloudshapers@cloud.com</a></p>
                 <div class="icon col col-md-06 ms-auto">
                     <a class="head-icon" href=""><i class="fa-brands fa-facebook-f"></i></a>
                     <a class="head-icon" href=""><i class="fa-brands fa-x-twitter"></i></a>
@@ -265,7 +280,7 @@
     </nav>
     <div class="container-fluid">
         <div class="banner" id="Home">
-            <img src="images/cloud shaper banner.jpg" alt="" class="banner-image img-thumbnail">
+            <img src="images/cloud shaper banner.jpg" alt="" class="banner-image img-fluid">
             <div class="overlay-text">
                 <p class="typed">We Love To Build Web Apps.....</p>
                 <a href="#Home" class="btn btn-info text-white">Get  Started</a>
@@ -280,7 +295,7 @@
            <div class="col-md-4">
               <div style="width: 18rem;">
                   <div class="number-behind">01</div>
-                  <div class="card-body">
+                  <div class="card-body homeclass">
                     <h5 class="card-title">Innovate</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <ul>
@@ -294,7 +309,7 @@
            <div class="col-md-4">
               <div style="width: 18rem;">
                   <div class="number-behind">02</div>
-                  <div class="card-body">
+                  <div class="card-body homeclass">
                     <h5 class="card-title">Create</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <ul>
@@ -309,7 +324,7 @@
            <div class="col-md-4">
               <div style="width: 18rem;">
                   <div class="number-behind">03</div>
-                  <div class="card-body">
+                  <div class="card-body homeclass">
                     <h5 class="card-title">Scale</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <ul>
@@ -322,10 +337,11 @@
            </div>
         </div>
     </div>
+ 
     <div class="container">
         <div class="row mb-2 justify-content-center">
             <div class="col-md-08 text-center">
-                <h1 class="section-heading mt-5" id="work">Our Works</h1>
+                <h1 class="section-heading" id="work">Our Works</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quam porro itaque inventore animi nostrum at ad blanditiis consectetur laboriosam sint, nobis ab sequi, deserunt adipisci. Quidem ea repellendus eligendi.</p>
             </div>
         </div>
@@ -442,6 +458,42 @@
     </div>
     </div>
     <hr>
+    <div class="container-fluid bg-body-tertiary">
+        <div class="row">
+            <div class="col col-md-4 ms-auto">
+                <div class="footer">
+                    <h5 class="text-center">About Us</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptatem ipsam fugiat maiores cupiditate molestias ad, magnam, nihil iste culpa maxime, repellendus rerum perspiciatis autem commodi harum suscipit provident dolore.</p>
+                </div>
+            </div>
+            <div class="col-md-4 ms-auto">
+                <div class="footer">
+                    <h5>Features</h5>
+                    <ul class="footer-list">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#work">work</a></li>
+                        <li><a href="#service">service</a></li>
+                        <li><a href="#contact">contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 ms-auto">
+                <div class="footer">
+                    <h5>Get In Touch</h5>
+                    <a class="footer-icon" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="footer-icon" href=""><i class="fa-brands fa-x-twitter"></i></a>
+                    <a class="footer-icon" href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href="" class="footer-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="footer-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                &circledR;Rights to  the content of this website are reserved.
+                <h6>created by booboo</h6>
+            </div>
+        </div>
+    </div>
        
 </body>
 </html>
